@@ -1,59 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=viaggio a londra, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <!-- intestazione -->
-    <header>
 
-        <h1>il mio Viaggio a Londra</h1>
-        <div>
-            <img src="./images/1.jpg" alt="londra a">
-            <img src="./images/2.jpg" alt="londra b">
-            <img src="./images/3.jpg" alt="londra c">
-        </div>
-        <hr>
-    </header>
-    <main>
-        <!-- sezione spese -->
-    <section  class="spese">
-        <h2>le mie spese</h2>
-        <table>
-           <tr>          
-             <th>Numero</th>
-             <th>descrizione</th>
-             <th>costo</th>
-           </tr>
-        </table>
-        <table>
-            <tr>          
-              <th>1</th>
-              <th>Biglietto Aereo</th>
-              <th>120 &euro;</th>
-            </tr>
-         </table>
-         <table>
-            <tr>          
-              <th>1</th>
-              <th>Biglietto Aereo</th>
-              <th>120 &euro;</th>
-            </tr>
-         </table>
-         <table>
-            <tr>          
-              <th>1</th>
-              <th>Biglietto Aereo</th>
-              <th>120 &euro;</th>
-            </tr>
-         </table>
-         <hr>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=viaggio a londra, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- intestazione -->
+  <header>
+
+    <h1>il mio Viaggio a Londra</h1>
+    <div>
+      <img src="./images/1.jpg" alt="londra a">
+      <img src="./images/2.jpg" alt="londra b">
+      <img src="./images/3.jpg" alt="londra c">
+    </div>
+    <hr>
+  </header>
+  <main>
+    <!-- sezione spese -->
+    <section class="spese">
+      <h2>le mie spese</h2>
+      <table>
+
+        <thead>
+          <tr>
+            <th>Numero</th>
+            <th>descrizione</th>
+            <th>costo</th>
+          </tr>
+        </thead>
+
+
+        <tbody>
+          <tr>
+            <th>1</th>
+            <th>Biglietto Aereo</th>
+            <th>120 &euro;</th>
+          </tr>
+
+          <tr>
+            <td>1</td>
+            <td>Biglietto Aereo</td>
+            <td>120 &euro;</td>
+          </tr>
+
+          <tr>
+            <td>1</th>
+            <td>Biglietto Aereo</td>
+            <td>120 &euro;</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <!--colspan prende la lunghezza (spanna la colonna )2 celle attributo quindi se metto td sfors div 3  -->
+            <!-- row span spannerebbe sotto  -->
+            <td colspan="2">totale</td>
+
+            <td>360 &euro;</td>
+          </tr>
+        </tfoot>
+      </table>
+      <hr>
 
     </section>
 
+    <!-- cose da fare  -->
+
+    <section class="cose da fare "></section>
+    <h3>Cose da fare</h3>
+    <ul>
+
+      <li>Visitare tower for london &cross;</li>
+      <li>Visitare Greenwuic &check;</li>
+      <li>Ascoltare un artista di starda a Coven Garden &check;</li>
+      <li>Mangiare il tipico Fisch and chips inglese &cross;</li>
+    </ul>
+    <hr>
+
+    <!-- lista info utili -->
+
+    <section>
+      <ol>
+
+        <li>Numeri di emergenza</li>
+        <ul>
+          <li><b>999</b>-emergenza</li>
+          <li><b>101</b>-Numero polizia</li>
+          <li><b>111</b>-Numero assicurazione medica</li>
+        </ul>
+        <li>hotel</li>
+        <ul>
+
+          <li><b>Nome-Hotel</b>: Backingam Palace</li>
+          <li><b>Indirizzo hotel</b>:Westmister,london SW 1AA,Regno Unito</li>
+        </ul>
+        <li>aereo</li>
+        <ul>
+
+          <li><b>Volo di andata</b>:y1234x,ore 9:30 da Milano Malpensa</li>
+          <li><b>Volo di ritorno</b>:Y1236X,ore 18:30 da London Heathrow</li>
+        </ul>
+        <hr>
+      </ol>
+    </section>
+    <section>
+
+    <h3>foto</h3>
+    </section>
+
+<img src="./images/4.jpg" alt="">
+<img src="./images/5.jpg" alt="">
 
 
 
@@ -61,19 +121,7 @@
 
 
 
-
-    <section></section>
-    <section></section>
-    <section></section>
-
-
-
-
-
-
-
-
-
-    </main>
+  </main>
 </body>
+
 </html>
